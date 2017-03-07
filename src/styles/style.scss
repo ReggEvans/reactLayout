@@ -3,8 +3,189 @@
 	box-sizing: border-box;
 }
 
-h1 {
-	font-size: 300px;
-	text-align: center;
-	color: fuchsia;
+body {
+  margin: auto;
+}
+
+.blog-page-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header {
+	width: 100%;
+	height: 350px;
+	background: #fff url("http://magentanova.github.io/html-intro-1/images/houston.jpg") center ;
+	position: relative; 
+}
+
+.logo-img {
+  border-radius: 75px;
+  border: 5px solid #FFF;
+  position: absolute;
+  top: 280px;
+  left: 100px;
+}
+
+.body-wrapper {
+  width: 90%;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 5%;
+}
+
+.left-col {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 25%;
+  padding: 10px;
+  color: #989898;
+}
+
+.left-col h4 {
+  color: #000;
+}
+
+.left-col p {
+  font-family: serif;
+}
+
+.mid-col {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 50%;
+  padding: 10px;
+}
+.mid-col h1 {
+  margin-top: 10px;
+}
+
+.mid-col p {
+  line-height: 150%;
+}
+
+.mid-col a {
+  color: blue;
+  text-decoration: none;
+}
+
+small {
+  font-family: serif;
+  font-style: italic;
+  color: gray;
+}
+
+.mid-col img {
+  max-width: 100%;
+}
+
+.right-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  position: fixed;
+  top: 410px;
+}
+
+.follow-box {
+  border: 1px solid #000;
+  width: 280px;
+  font-family: Helvetica;
+}
+
+.follow-box-top p {
+  margin: 0;
+  padding: 2px 2px;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+
+.follow-box-bottom {
+  margin: 0;
+  padding: 4px;
+}
+
+.tiy-img {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.tiy-title {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tiy-title p {
+  margin: 0;
+  font-size: 12px;
+  padding-top: 4px;
+  text-align: left;
+}
+
+.tiy-follow {
+  display: inline-block;
+  vertical-align: top;
+  margin: 12px 0 0 12px;
+}
+
+button {
+  background: cornflowerblue;
+  color: #FFF;
+  border: 2px solid cornflowerblue;
+}
+
+@media only screen and (max-width: 1100px) {
+	.header {
+		height: 200px;
+	}
+	.logo-img {
+	  top: 125px;
+	  left: 90px;
+	}
+    .right-col {
+		display: none;
+	}
+	.left-col {
+		width: 30%
+	}
+	.mid-col {
+		width: 70%;
+	}
+}
+
+
+@media only screen and (max-width: 700px) {
+	.header {
+		height: 150px;
+	}
+	.logo-img {
+	  top: 75px;
+	  left: 50%;
+	  margin-left: -60px;
+	}
+    .right-col {
+		display: block;
+		position: static;
+		width: 100%;	
+	}
+	.left-col {
+		display: block;
+		width: 100%;
+	}
+	.mid-col {
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	.follow-box {
+  		width: 100%;
+  		font-family: Helvetica;
+	}
+	.tiy-follow {
+  		margin: 12px 10px 0 0;
+  		float: right;
+	}
 }
